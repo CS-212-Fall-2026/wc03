@@ -1,0 +1,74 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wasysym}
+
+\usepackage{xcolor}
+\usepackage{wasysym}
+
+
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\newcommand{\U}{\textit{hop}} % Use \U to typeset this operator.
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\title{Weekly Challenge 03: Nondeterminism}
+\author{CS 212 Nature of Computation\\Habib University}
+\date{Fall 2026}
+
+\boxedpoints
+
+
+% \printanswers % Uncomment this line
+
+\begin{document}
+\maketitle
+
+\begin{definition}
+    Let $\Sigma = \{6,7\}$ and let $w = w_1w_2\dots w_n$ be a string such that each $w_i \in \Sigma$. Then the string $\U(w)$ is defined as: $\U(w) = w_2w_4w_6 \dots w_{\lfloor n/2 \rfloor}$. Similarly for a language $L \subseteq \Sigma^*$, $\U(L)$ is defined as: $\U(L) = \{ \U(w) | w\in L \}$.
+\end{definition}
+
+
+
+\begin{questions}
+\question
+
+\begin{parts}
+    \part Let $L \subseteq \{6,7\}^*$ be a regular language, show that $\U(L)$ is also regular by constructing a finite state automata for $\U(L)$.
+    \begin{solution}
+        % Enter your solution here 
+    \end{solution}
+
+    \part Consider the regular language $BrainRot=(67)^*$. Applying the same construction you described in part (a), give state diagram of NFA recognizing $\U(BrainRot)$. \\
+    \textit{\underline{Hint:} start by drawing the state diagram for the DFA recognizing $BrainRot$}.
+    \begin{solution}
+        % Enter your solution here 
+    \end{solution}
+
+    \part The NFA you obtained in part (b) was constructed using the general construction from part (a). For the particular language $\U(BrainRot)$, try to construct a finite-state automaton that recognizes the same language using as few states as possible. \\
+    Compare your machine with the NFA from part (b) and the DFA for (BrainRot).What do you observe about the number of states in these machines? What does this tell you about the construction from part (a)?
+    \begin{solution}
+        % Enter your solution here 
+    \end{solution}
+    
+\end{parts}
+
+ 
+
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+
+
