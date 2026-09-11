@@ -32,7 +32,7 @@
 \maketitle
 
 \begin{definition}
-    Let $\Sigma = \{6,7\}$ and let $w = w_1w_2\dots w_n$ be a string such that each $w_i \in \Sigma$. Then the string $\U(w)$ is defined as: $\U(w) = w_2w_4w_6 \dots w_{\lfloor n/2 \rfloor}$. Similarly for a language $L \subseteq \Sigma^*$, $\U(L)$ is defined as: $\U(L) = \{ \U(w) | w\in L \}$.
+    Let $\Sigma = \{6,7\}$ and let $w = w_1w_2\dots w_n$ be a string such that each $w_i \in \Sigma$. Then the string $\U(w)$ is defined as: $\U(w) = w_2w_4w_6 \dots w_p$, where $w_p = w_n$ if $|w|$ is even, and $w_p = w_{n-1}$ if $|w|$ is odd. Similarly for a language $L \subseteq \Sigma^*$, $\U(L)$ is defined as: $\U(L) = \{ \U(w) | w\in L \}$.
 \end{definition}
 
 
